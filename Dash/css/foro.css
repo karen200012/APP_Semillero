@@ -1,0 +1,169 @@
+.li {
+    text-decoration: none;
+  position: relative;
+  color: #cadde5;
+  background-color: #0079C1;
+  border: 1px solid #0079C1;
+  border-radius: 1px;
+  padding: 5px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.li:hover {
+    color: #1e4069;
+    background-color: #cadde5;
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .session {
+    position: absolute;
+    margin-top: 11%;
+    margin-right: 10%;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 500px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all ease;
+  }
+  .input {
+    font-size: 1em;
+    color: black;
+    margin: 6px 0 6px 0;
+    /* border-radius: 40px; */
+    padding: 10px 15px;
+    background: white;
+    outline: none;
+    text-decoration: none;
+    border: 1px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .contenido{
+      padding-left: 10%;
+      padding-top: 1%;
+  }
+
+  /* diseño del moda */
+  body{
+    background-image: url("../img/fondo_simple.jpeg");
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+#show-moda{
+    text-align: center;
+    background: #bc561a;
+    padding: 15px 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-radius: 3.5px;
+    text-decoration: none;
+    transition: all 0.15s linear;
+}
+
+#show-moda:hover{
+cursor: pointer;
+background: #bc9d1a;
+}
+.moda{
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 999999999;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+.moda .content-moda{
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    z-index: 9999999999;
+}
+
+.moda article{
+    height: 300px;
+    background: #bc651a;
+}
+.close-moda{
+    color: #e74c3c;
+    position: absolute;
+    top: 0.2em;
+    right: 0.375em;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.moda a:hover{
+    color: #c0392b;
+}
+.moda:target{
+    opacity: 1;
+    top: 0;
+}
+.moda .btn-close-moda{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+.moda:target .content-moda{
+    top: 50px;
+    transition: top 0.35s ease;
+}
+
+@media(max-width:500px){
+    .moda.content-moda{
+        width: 90%;
+        max-width: none;
+        left: 5%;
+        margin-left: 0;
+    }
+}
+.modal h2{
+  padding: 0.5em;
+  text-align: center;
+  color: #444444;
+  margin-left: 3px;
+}
+#mostrarOcultar{
+  display: none;
+}
+.comentario{
+  background-color: #f1eded;
+  border-radius: 14px;
+  width: 300px;
+  margin-left: 5%;
+  padding: 8px;
+}
+h6{
+
+  padding-bottom: -4px !important;
+  color: black;
+}

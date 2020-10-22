@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>App Semillero</title>
+    <link rel="shortcut icon" class="redondeo-img" type="text/css" href="./img/logo.jpeg" class="redondeo-img">
+    <script>function mostrar(){
+        document.getElementById('mostrarOcultar').style.display="block";
+    };function ocultar(){
+        document.getElementById('mostrarOcultar').style.display="none";
+    } </script>
+</head>
+
+<body>
+
+    <div class="contenido">
+        <!-- tarjeta 1 -->
+        <div class="card" style="width: 29rem;">
+            <img class="card-img-top" src="img/semillero.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">ArcGis Online </h5>
+                <p class="card-text">Que les parece el rendimiento del la plataforma ArcGis Online </p>
+                <div class="links">
+                    
+                   
+                    <a  style="border-radius: 7px;" class="li" type="button" onclick="mostrar();">Comentarios</a>
+                </div>
+            </div>
+            
+            <div id="mostrarOcultar">
+                <a style="margin-left: 2%; cursor: pointer;" onclick="ocultar();">ver menos</a>
+                <br><br>
+                <div class="comentario">
+                    <h6>Aura Vargas</h6>
+                <h6> En mi opinion personal me gusta el diseño y el funcionamiento de la paguina </h6>
+            </div><br>
+            <div class="comentario">
+                <h6>Karen Jimenéz</h6>
+                <h6> En mi opinion personal me gusta el diseño y el funcionamiento de la paguina </h6>
+            </div><br>
+            <div class="comentario">
+                <h6>Yuliano Quiñones</h6>
+                <h6> En mi opinion personal me gusta el diseño y el funcionamiento de la paguina </h6>
+            </div><br>
+                            <input type="text" style="border-radius: 7px; margin-left: 5%; margin-bottom: 2%;" name="comentario" placeholder="Ingrese su comentario">
+                                <a style="border-radius: 7px;" class="li" href="#">Enviar </a>
+                            <a style="border-radius: 7px;"class="li" href="#moda">Comentar </a>
+                        <br>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- tarjeta 2 -->
+
+        <div class="card" style="width: 29rem;">
+            <img class="card-img-top" src="img/semillero.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">ArcGis Online </h5>
+                <p class="card-text">Que les parece el rendimiento del la plataforma ArcGis Online </p>
+                <div class="links">
+                    
+                   
+                    <a  style="border-radius: 7px;" class="li" type="button" onclick="mostrar();">Comentarios</a>
+                </div>
+            </div>
+            
+            <div id="mostrarOcultar">
+                <a style="margin-left: 2%; cursor: pointer;" onclick="ocultar();">ver menos</a>
+                <br><br>
+                <div class="comentario">
+                    <h6>Aura Vargas</h6>
+                <h6> En mi opinion personal me gusta el diseño y el funcionamiento de la paguina </h6>
+            </div><br>
+            <div class="comentario">
+                <h6>Karen Jimenéz</h6>
+                <h6> En mi opinion personal me gusta el diseño y el funcionamiento de la paguina </h6>
+            </div><br>
+            <div class="comentario">
+                <h6>Yuliano Quiñones</h6>
+                <h6> En mi opinion personal me gusta el diseño y el funcionamiento de la paguina </h6>
+            </div><br>
+                            <input type="text" style="border-radius: 7px; margin-left: 5%; margin-bottom: 2%;" name="comentario" placeholder="Ingrese su comentario">
+                                <a style="border-radius: 7px;" class="li" href="#">Enviar </a>
+                            <a style="border-radius: 7px;"class="li" href="#moda">Comentar </a>
+                        <br>
+            </div>
+        </div>
+        <br>
+        <br>
+
+    
+
+    <aside id="moda" class="moda ">
+
+        <div class="content-moda">
+            <header>
+                <a href="#" class="close-moda">X</a>
+                <h2>ArcGis Online</h2>
+
+            </header>
+            <article>
+                <div class="session" id="session">
+                    <form>
+                        <!--correo-->
+                        <input class="input" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" />
+                        <br />
+                        <!--password-->
+                        <input class="input" type="text" name="comentario" id="comentario"
+                            placeholder="Ingrese su comentario" />
+                        <br />
+                        <br><br>
+
+                        <div class="contentButtons">
+                            <a class="li" href="foro.html"> Cancelar</a>
+                            <a class="li" href="foro.html"> Enviar</a>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </div>
+        <a href="#" class="btn-close-moda"></a>
+    </aside>
+
+<!-- Calendario -->
+
+
+
+</body>
+
+</html>
