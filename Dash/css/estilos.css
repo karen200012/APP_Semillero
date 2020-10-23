@@ -62,15 +62,14 @@ body, html{
 .dashboard-sideBar,
 .dashboard-contentPage{
 	position: absolute;
-	
 	top: 0;
 	height: 100%;
 	transition: all .3s ease-in-out;
 }
-/*SIDEBAR MENU*/
+/*SIDEBAR MENU ancho=270*/
 .dashboard-sideBar,
 .dashboard-sideBar-ct{
-	width: 270px;
+	width: 200px;
 }
 /*IMAGEN DEL MENU*/
 .dashboard-sideBar{
@@ -194,11 +193,11 @@ body, html{
 	
 }
 
-/*CONTENEDOR/BARRA SUPERIOR*/
+/*CONTENEDOR/BARRA SUPERIOR TAMAÑO =270*/
 .dashboard-contentPage{
 	right: 0;
 	z-index: 1;
-	padding-left: 270px;
+	padding-left: 200px;
 }
 .dashboard-Navbar,
 .dashboard-Navbar > ul,

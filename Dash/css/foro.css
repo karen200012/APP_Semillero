@@ -17,9 +17,9 @@
     text-decoration: none;
   position: absolute;
   color: #cadde5;
-  background-color: #0079C1;
-  border: 1px solid #0079C1;
-  border-radius: 1px;
+  /* background-color: #0079C1; */
+  /* border: 1px solid #0079C1; */
+  /* border-radius: 1px}; */
   padding: 5px 15px;
   margin-left: 60%;
   margin-top: 5%;
@@ -28,10 +28,7 @@
   cursor: pointer;
   z-index: 1;
 }
-.li1:hover {
-    color: #1e4069;
-    background-color: #cadde5;
-  }
+
   .form {
     width: 100%;
     display: flex;
@@ -72,107 +69,7 @@
   }
 
   /* diseño del moda */
-  body{
-    background-image: url("../img/fondo_simple.jpeg");
-    font-family: sans-serif;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: center;
-}
-
-#show-moda{
-    text-align: center;
-    background: #bc561a;
-    padding: 15px 15px;
-    color: white;
-    font-weight: 500;
-    font-size: 1.5em;
-    border-radius: 3.5px;
-    text-decoration: none;
-    transition: all 0.15s linear;
-}
-
-#show-moda:hover{
-cursor: pointer;
-background: #bc9d1a;
-}
-.moda{
-    position: fixed;
-    top: -100vh;
-    left: 0;
-    z-index: 999999999;
-    background: rgba(0, 0, 0, 0.75);
-    width: 100vw;
-    height: 800px;
-    opacity: 0;
-    transition: opacity 0.35s ease;
-}
-.moda .content-moda{
-    width: 100%;
-    height: 45%;
-    max-width: 500px;
-    position: fixed;
-    left: 50%;
-    top: -100vh;
-    transition: top 0.35s ease;
-    margin-left: -250px;
-    background: white;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    z-index: 9999999999;
-}
-
-.moda article{
-    height: 400px;
-    background: rgb(57,0,123);
-}
-.close-moda{
-    color: #e74c3c;
-    position: absolute;
-    top: 0.2em;
-    right: 0.375em;
-    margin: 0;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-decoration: none;
-}
-.moda a:hover{
-    color: #c0392b;
-}
-.moda:target{
-    opacity: 1;
-    top: 0;
-}
-.moda .btn-close-moda{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999991;
-}
-.moda:target .content-moda{
-    top: 50px;
-    transition: top 0.35s ease;
-}
-
-@media(max-width:500px){
-    .moda.content-moda{
-        width: 90%;
-        max-width: none;
-        left: 5%;
-        margin-left: 0;
-    }
-}
-.modal h2{
-  padding: 0.5em;
-  text-align: center;
-  color: #444444;
-  margin-left: 3px;
-}
+  
 #mostrarOcultar{
   display: none;
 }
