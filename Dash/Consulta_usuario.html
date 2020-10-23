@@ -14,7 +14,7 @@
   <h2 class="blanco">Consulta de usuarios</h2>
   <br/>
       </div>
-  <div class="row justify-content-md-center bw">
+  <div  background="./img/fondo_simple.jpeg" class="row justify-content-md-center bw">
       <div class="col-md-6">
           
           <br>
@@ -102,7 +102,7 @@
         <!-- MODAL -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content contenido">
               <div class="page-content page-container" id="page-content">
                       <div class="justify-content-center">
                           <div >
@@ -114,8 +114,8 @@
                                               <h6 class="f-w-600">Nombre Apellido</h6>
                                               <br/>
                                               <p>Tajadas</p>
-                                              <p><span class="icon-circle-with-plus icon">
-                                              </span>&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;<span class="icon-circle-with-minus icon">
+                                              <p><span onclick="sumar()" class="icon-circle-with-plus icon">
+                                              </span>&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;<span onclick="restar()" class="icon-circle-with-minus icon">
                   
                                               </span></p>
                                           </div>
@@ -175,6 +175,7 @@
   <table class="table table-responsive">
       <thead class="thead-dark">
         <tr>
+          <th scope="col">Opciones</th>
           <th scope="col">Id</th>
           <th scope="col">Nombres</th>
           <th scope="col">Apellidos</th>
@@ -183,12 +184,16 @@
           <th scope="col">correo Personal</th>
           <th scope="col">Rol</th>
           <th scope="col">Profesión</th>
-          <th scope="col">fecha_entrada</th>
-          <th scope="col">fecha_salida</th>
+          <th scope="col">fecha de entrada</th>
+          <th scope="col">fecha de salida</th>
+          <th scope="col">Estado</th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td>&nbsp;<span class="icon-edit icon" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+          </span>&nbsp;<span onclick="eliminar()" class="icon-remove-user icon">
+          </span></td>
           <td>1000224130</td>
           <td>Paula Giseth</td>
           <td>Galicia Niño</td>
@@ -199,8 +204,12 @@
           <td>Animadora 2D</td>
           <td>15/01/2019</td>
           <td>15/01/2020</td>
+          <td>Activo</td>
         </tr>
         <tr>
+          <td>&nbsp;<span class="icon-edit icon" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+          </span>&nbsp;<span onclick="eliminar()" class="icon-remove-user icon">
+          </span></td>
           <td>1000224130</td>
           <td>Paula Giseth</td>
           <td>Galicia Niño</td>
@@ -211,8 +220,12 @@
           <td>Animadora 2D</td>
           <td>15/01/2019</td>
           <td>15/01/2020</td>
+          <td>Inactivo</td>
         </tr>
         <tr>
+          <td>&nbsp;<span class="icon-edit icon" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+          </span>&nbsp;<span onclick="eliminar()" class="icon-remove-user icon">
+          </span></td>
           <td>1000224130</td>
           <td>Paula Giseth</td>
           <td>Galicia Niño</td>
@@ -223,12 +236,165 @@
           <td>Animadora 2D</td>
           <td>15/01/2019</td>
           <td>15/01/2020</td>
+          <td>Activo</td>
         </tr>
       </tbody>
     </table>
   </div>
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar usuario</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="container">
+            <div class="row">
+              <div class="col-sm">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Nombres:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Apellidos:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Apellidos:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="row">
+            <div class="col-sm">
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Rol:</label>
+                <select class="form-control">
+                  <option>Multimedia</option>
+                  <option>Desarrollador</option>
+                  <option>Tematico</option>
+                </select>
+              </div>
+            </div>
+              <div class="col-sm">
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Estado:</label>
+                <select class="form-control">
+                  <option>Activo</option>
+                  <option>Inactivo</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Profesión</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <label for="recipient-name" class="col-form-label">Correo corporativo:</label>
+              <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+              </div>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Fecha de entrada:</label>
+              <input type="date" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Fecha de salida:</label>
+              <input type="date" class="form-control" id="recipient-name">
+            </div>
+            
+          </div>
+        </div>
+        </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script>
       document.getElementById("tu").style.display="none"
+      function eliminar(){
+        swal("", {
+  buttons: ["Cancelar", "Continuar"],
+});
+swal("¿Está seguro de eliminar este usuario?", {
+  buttons: {
+    cancel: "Cancelar",
+    catch: {
+      text: "Continuar",
+      value: "catch",
+    }
+  },
+  icon: "warning",
+})
+.then((value) => {
+  switch (value) {
+
+    case "catch":
+      swal("Eliminado", "El usuario fue eliminado exitosamente", "success");
+      break;
+  }
+});
+      }
+      function sumar(){
+        swal("", {
+  buttons: ["Cancelar", "Continuar"],
+});
+swal("¿Está seguro de sumar una tajada a este usuario?", {
+  buttons: {
+    cancel: "Cancelar",
+    catch: {
+      text: "Continuar",
+      value: "catch",
+    }
+  },
+  icon: "warning",
+})
+.then((value) => {
+  switch (value) {
+
+    case "catch":
+      swal("Una tajada más", "Se agrego exitosamente una tajada", "success");
+      break;
+  }
+});
+      }
+function restar(){
+        swal("", {
+  buttons: ["Cancelar", "Continuar"],
+});
+swal("¿Está seguro de restar una tajada a este usuario?", {
+  buttons: {
+    cancel: "Cancelar",
+    catch: {
+      text: "Continuar",
+      value: "catch",
+    }
+  },
+  icon: "warning",
+})
+.then((value) => {
+  switch (value) {
+
+    case "catch":
+      swal("Una tajada menos", "Se resto exitosamente una tajada", "success");
+      break;
+  }
+});
+      }
       var op1 =document.getElementById("op1")
       var op2 =document.getElementById("op2")
       op2.onclick = function(){
@@ -248,6 +414,7 @@
               document.getElementById("au").style.display="flex"
           }
       }
+      
   </script>
   <style>
       .btn-outline-secondary{
@@ -256,6 +423,9 @@
   }
   
   </style>
+  <script src="../js/sweetalert.min.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>

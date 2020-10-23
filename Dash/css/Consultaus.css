@@ -14,6 +14,9 @@
 .row{
    text-align: center;
 }
+.swal-overlay {
+  top: -45%;
+}
 .row2{
       margin-right: 0px !important;
     margin-left: 0px !important;
@@ -115,7 +118,7 @@ box-shadow: 10px 10px 24px 0px rgba(219,219,219,1);
     .user-card-full{
       margin: 0px;
     }
-    .modal-content{
+    .contenido{
       height: 20%;
     }
     .img-radius {
