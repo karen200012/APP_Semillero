@@ -34,7 +34,8 @@
     border-radius: 10px;
     max-width: 500px;
     height: 90vh;
-    background: rgba(135, 206, 235,0.8);
+    /* background: rgba(135, 206, 235,0.8); */
+    background: rgb(57,0,123);
     display: flex;
     justify-content: center;
     align-items: center;
