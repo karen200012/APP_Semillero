@@ -112,7 +112,12 @@ box-shadow: 10px 10px 24px 0px rgba(219,219,219,1);
     .m-b-25 {
         margin-bottom: 25px
     }
-    
+    .user-card-full{
+      margin: 0px;
+    }
+    .modal-content{
+      height: 20%;
+    }
     .img-radius {
         border-radius: 5px
     }
