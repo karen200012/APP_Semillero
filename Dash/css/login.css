@@ -35,7 +35,7 @@
     max-width: 500px;
     height: 90vh;
     /* background: rgba(135, 206, 235,0.8); */
-    background: rgb(57,0,123);
+    background: rgb(57,0,123,0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@
     font-size: 1em;
     width: 100%;
     font-family: "Bellota Text", cursive;
-    color: #0079C1;
+    color: white;
     text-align: center;
   }
   .form {
